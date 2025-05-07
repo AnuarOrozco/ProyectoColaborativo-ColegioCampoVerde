@@ -44,7 +44,7 @@ const Levels = () => {
         {levels.map((level) => (
           <motion.div
             key={level.name}
-            className="rounded-xl overflow-hidden shadow-lg"
+            className="rounded-xl overflow-hidden shadow-lg bg-white transform hover:scale-105 transition duration-300 ease-in-out"
             variants={item}
           >
             <img
