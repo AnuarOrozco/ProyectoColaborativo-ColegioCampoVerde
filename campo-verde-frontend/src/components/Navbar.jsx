@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 
 const menu = {
@@ -11,6 +10,9 @@ const menu = {
   "Eventos": ["Eventos destacados"],
   "Contacto": ["Informes", "Contáctanos"]
 };
+
+const normalizeId = (text) =>
+  text.toLowerCase().replace(/\s+/g, "-").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
 const Navbar = () => {
   const [active, setActive] = useState(null);
@@ -31,8 +33,13 @@ const Navbar = () => {
               {active === item && (
                 <ul className="absolute top-8 left-0 bg-white shadow-md rounded-md py-2 px-4 space-y-1 min-w-[180px] z-50">
                   {menu[item].map((subItem) => (
-                    <li key={subItem} className="hover:text-green-600 cursor-pointer">
-                      {subItem}
+                    <li key={subItem}>
+                      <a
+                        href={`#${normalizeId(subItem)}`}
+                        className="block hover:text-green-600 transition-colors duration-200"
+                      >
+                        {subItem}
+                      </a>
                     </li>
                   ))}
                 </ul>
