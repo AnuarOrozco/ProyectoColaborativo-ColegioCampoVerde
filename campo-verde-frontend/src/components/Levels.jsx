@@ -7,7 +7,7 @@ const levels = [
   
   const Levels = () => {
     return (
-      <section className="py-20 px-6 bg-white text-center">
+      <section id="niveles" className="py-20 px-6 bg-white text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-green-700 mb-10">Niveles Educativos</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {levels.map((level) => (
