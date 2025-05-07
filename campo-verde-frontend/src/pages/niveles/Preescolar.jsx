@@ -149,31 +149,33 @@ export default function Preescolar() {
         </div>
       </motion.section>
 
-      {/* Sección Clases Especiales */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold text-verde mb-8 text-center">Clases especiales</h2>
-        <p className="text-lg text-gray-700 mb-12 text-center max-w-4xl mx-auto">
-          Además de cuidar con esmero las áreas propias de este nivel, nuestros alumnos cursan las siguientes clases especiales que son impartidas por especialistas, y siempre acompañados de sus maestras titulares.
-        </p>
-        
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-          {['Psicomotricidad', 'Computación', 'Lego Workshop', 'Valores', 'Música'].map((item, index) => (
-            <motion.div
-              key={index}
-              className="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
-              viewport={{ once: true }}
-            >
-              <div className="bg-verde/10 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                <span className="text-verde text-2xl">{index + 1}</span>
-              </div>
-              <h3 className="font-semibold text-gray-800">{item}</h3>
-            </motion.div>
-          ))}
-        </div>
-      </section>
+{/* Sección Clases Especiales */}
+<section className="max-w-6xl mx-auto px-6 py-16">
+  <h2 className="text-3xl font-bold text-verde mb-8 text-center">Clases especiales</h2>
+  <p className="text-lg text-gray-700 mb-12 text-center max-w-4xl mx-auto">
+    Además de cuidar con esmero las áreas propias de este nivel, nuestros alumnos cursan las siguientes clases especiales que son impartidas por especialistas, y siempre acompañados de sus maestras titulares.
+  </p>
+  
+  <div className="flex justify-center">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-5xl">
+      {['Psicomotricidad', 'Computación', 'Lego Workshop', 'Valores', 'Música'].map((item, index) => (
+        <motion.div
+          key={index}
+          className="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: index * 0.1 }}
+          viewport={{ once: true }}
+        >
+          <div className="bg-verde/10 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+            <span className="text-verde text-2xl">{index + 1}</span>
+          </div>
+          <h3 className="font-semibold text-gray-800">{item}</h3>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Sección Instalaciones */}
       <section className="bg-gray-100 py-16">
