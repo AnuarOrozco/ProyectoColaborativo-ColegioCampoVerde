@@ -3,6 +3,12 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Nosotros from "./pages/Nosotros";
+import Preescolar from "./pages/niveles/Preescolar";
+// Importaciones comentadas hasta que existan los componentes
+// import Primaria from "./pages/niveles/Primaria";
+// import Secundaria from "./pages/niveles/Secundaria";
+// import Preparatoria from "./pages/niveles/Preparatoria";
+// import CampusColima from "./pages/campus/Colima";
 
 function App() {
   return (
@@ -12,15 +18,20 @@ function App() {
         
         <main className="flex-grow">
           <Routes>
-            {/* Ruta para la landing page */}
+            {/* Página Principal - Implementada */}
             <Route path="/" element={<Home />} />
             
-            {/* Ruta para la nueva página Nosotros */}
+            {/* Sección Nosotros - Implementada */}
             <Route path="/nosotros" element={<Nosotros />} />
             
-            {/* Puedes agregar más rutas aquí según avances */}
-            {/* Ejemplo: */}
-            {/* <Route path="/historia" element={<Historia />} /> */}
+            {/* Niveles Educativos - Solo Preescolar implementado */}
+            <Route path="/niveles/preescolar" element={<Preescolar />} />
+            
+            {/* Rutas comentadas hasta implementar */}
+            {/* <Route path="/niveles/primaria" element={<Primaria />} /> */}
+            {/* <Route path="/niveles/secundaria" element={<Secundaria />} /> */}
+            {/* <Route path="/niveles/preparatoria" element={<Preparatoria />} /> */}
+            {/* <Route path="/campus/colima" element={<CampusColima />} /> */}
           </Routes>
         </main>
         
