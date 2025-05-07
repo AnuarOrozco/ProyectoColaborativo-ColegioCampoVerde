@@ -50,11 +50,16 @@ Rediseño completo de la web institucional del Colegio Campoverde con implementa
 - Chart.js (Gráficos de desempeño)
 
 ### Backend
-- Node.js + Express
-- MongoDB (Base de datos)
-- JWT (Autenticación)
-- Socket.IO (Chat en tiempo real)
-- Cloudinary (Gestión de archivos)
+- **Java 17** (LTS) - Lenguaje principal
+- **Spring Boot 3** - Framework backend
+- **Spring Security** - Autenticación y autorización
+- **JWT** - Gestión de tokens
+- **Spring Data JPA** - Acceso a datos
+- **PostgreSQL** - Base de datos relacional
+- **Redis** - Caché y mensajería
+- **WebSocket** (STOMP) - Comunicación en tiempo real
+- **MinIO** - Almacenamiento de archivos
+- **Spring Batch** - Procesamiento por lotes (reportes)
 
 ### DevOps
 - Docker (Contenedorización)
@@ -68,14 +73,6 @@ Rediseño completo de la web institucional del Colegio Campoverde con implementa
 3. Crear API para gestión académica
 4. Implementar sistema de notificaciones
 5. Desarrollar dashboard para padres
-
-## 🧑‍💻 Equipo de Desarrollo
-
-- **Líder de Proyecto**: [Tu Nombre]
-- **Diseño UX/UI**: [Nombre]
-- **Frontend**: [Nombre]
-- **Backend**: [Nombre]
-- **QA**: [Nombre]
 
 ## 📄 Licencia
 
