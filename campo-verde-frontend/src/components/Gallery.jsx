@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const images = ["/gallery/1.jpg", "/gallery/2.jpg", "/gallery/3.jpg", "/gallery/4.jpg"];
+const images = ["images/gallery/1.jpg", "images/gallery/2.jpg", "images/gallery/3.jpg", "images/gallery/4.jpg"];
 
 const containerVariants = {
   hidden: {},

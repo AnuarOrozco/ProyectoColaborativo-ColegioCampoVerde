@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const levels = [
-  { name: "Preescolar", image: "/levels/preescolar.jpg" },
-  { name: "Primaria", image: "/levels/primaria.jpg" },
-  { name: "Secundaria", image: "/levels/secundaria.jpg" },
-  { name: "Preparatoria", image: "/levels/preparatoria.jpg" },
+  { name: "Preescolar", image: "/images/levels/preescolar.jpg" },
+  { name: "Primaria", image: "/images/levels/primaria.jpg" },
+  { name: "Secundaria", image: "/images/levels/secundaria.jpg" },
+  { name: "Preparatoria", image: "/images/levels/preparatoria.jpg" },
 ];
 
 const container = {

@@ -5,7 +5,7 @@ const Hero = () => {
     <section
       id="inicio"
       className="relative h-[90vh] bg-cover bg-center"
-      style={{ backgroundImage: "url('/hero.jpg')" }}
+      style={{ backgroundImage: "url('/images/hero1.jpg')" }}
     >
       <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
         <motion.h1
