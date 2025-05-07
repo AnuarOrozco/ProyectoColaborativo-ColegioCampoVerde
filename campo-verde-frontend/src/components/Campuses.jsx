@@ -2,7 +2,7 @@ const campuses = ["Colima", "Tecomán", "Manzanillo", "Vallarta"];
 
 const Campuses = () => {
   return (
-    <section className="py-20 px-6 bg-gray-100 text-center">
+    <section id="campus" className="py-20 px-6 bg-gray-100 text-center">
       <h2 className="text-3xl md:text-4xl font-bold text-green-700 mb-8">Nuestros Campus</h2>
       <div className="flex flex-wrap justify-center gap-6">
         {campuses.map((campus) => (
