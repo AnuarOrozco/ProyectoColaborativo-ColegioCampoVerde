@@ -1,25 +1,26 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const levels = [
   { 
     name: "Preescolar", 
     image: "/images/levels/preescolar.jpg",
-    link: "/preescolar" 
+    link: "/niveles/preescolar"  // Ruta actualizada
   },
   { 
     name: "Primaria", 
     image: "/images/levels/primaria.jpg",
-    link: "/primaria" 
+    link: "/niveles/primaria"  // Ruta actualizada
   },
   { 
     name: "Secundaria", 
     image: "/images/levels/secundaria.jpg",
-    link: "/secundaria" 
+    link: "/niveles/secundaria"  // Ruta actualizada
   },
   { 
     name: "Preparatoria", 
     image: "/images/levels/preparatoria.jpg",
-    link: "/preparatoria" 
+    link: "/niveles/preparatoria"  // Ruta actualizada
   },
 ];
 
@@ -58,24 +59,25 @@ const Levels = () => {
         viewport={{ once: true, amount: 0.3 }}
       >
         {levels.map((level) => (
-          <motion.a
+          <motion.div
             key={level.name}
-            href={level.link}
-            className="block rounded-xl overflow-hidden shadow-lg bg-white transform hover:scale-[1.03] transition duration-300 ease-in-out cursor-pointer hover:shadow-xl"
+            className="rounded-xl overflow-hidden shadow-lg bg-white transform hover:scale-[1.03] transition duration-300 ease-in-out cursor-pointer hover:shadow-xl"
             variants={item}
             whileHover={{ y: -5 }}
           >
-            <div className="h-64 w-full overflow-hidden">
-              <img
-                src={level.image}
-                alt={level.name}
-                className="w-full h-full object-cover hover:scale-105 transition duration-500"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-800">{level.name}</h3>
-            </div>
-          </motion.a>
+            <Link to={level.link} className="block">
+              <div className="h-64 w-full overflow-hidden">
+                <img
+                  src={level.image}
+                  alt={level.name}
+                  className="w-full h-full object-cover hover:scale-105 transition duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800">{level.name}</h3>
+              </div>
+            </Link>
+          </motion.div>
         ))}
       </motion.div>
     </section>
