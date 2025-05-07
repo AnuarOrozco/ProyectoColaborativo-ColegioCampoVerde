@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -26,11 +27,11 @@ const About = () => {
         
         <p>
           Actualmente, nuestra institución cuenta con 4 Campus:{" "}
-          <a href="#colima" className="text-verde hover:text-verde-claro font-medium transition-colors">Colima</a>,{" "}
-          <a href="#tecoman" className="text-verde hover:text-verde-claro font-medium transition-colors">Tecomán</a>,{" "}
-          <a href="#manzanillo" className="text-verde hover:text-verde-claro font-medium transition-colors">Manzanillo</a>{" "}
+          <Link to="/campus/colima" className="text-verde hover:text-verde-claro font-medium transition-colors">Colima</Link>,{" "}
+          <Link to="/campus/tecoman" className="text-verde hover:text-verde-claro font-medium transition-colors">Tecomán</Link>,{" "}
+          <Link to="/campus/manzanillo" className="text-verde hover:text-verde-claro font-medium transition-colors">Manzanillo</Link>{" "}
           y{" "}
-          <a href="#vallarta" className="text-verde hover:text-verde-claro font-medium transition-colors">Vallarta</a>, con el mismo sello de excelencia que ha distinguido a nuestra institución a lo largo de los años.
+          <Link to="/campus/vallarta" className="text-verde hover:text-verde-claro font-medium transition-colors">Vallarta</Link>, con el mismo sello de excelencia que ha distinguido a nuestra institución a lo largo de los años.
         </p>
       </motion.div>
 
@@ -40,12 +41,12 @@ const About = () => {
         transition={{ duration: 0.6, delay: 0.4 }}
         viewport={{ once: true }}
       >
-        <a
-          href="#conocer-mas"
+        <Link
+          to="/nosotros"
           className="inline-block px-6 py-3 bg-verde text-white font-medium rounded-lg hover:bg-verde-claro transition-colors shadow-md hover:shadow-lg"
         >
           Conocer Más
-        </a>
+        </Link>
       </motion.div>
     </section>
   );
