@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Nosotros from "./pages/Nosotros";
 import Preescolar from "./pages/niveles/Preescolar";
 import Primaria from "./pages/niveles/Primaria";
+import ScrollToTop from "./components/ScrollToTop";
 // Importaciones comentadas hasta que existan los componentes
 // import Secundaria from "./pages/niveles/Secundaria";
 // import Preparatoria from "./pages/niveles/Preparatoria";
@@ -14,6 +15,7 @@ function App() {
   return (
     <Router>
       <div className="font-sans min-h-screen flex flex-col">
+      <ScrollToTop />
         <Navbar />
         
         <main className="flex-grow">
