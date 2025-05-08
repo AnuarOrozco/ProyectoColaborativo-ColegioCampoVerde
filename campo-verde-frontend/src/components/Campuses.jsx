@@ -11,19 +11,19 @@ const campuses = [
     name: "Tecomán",
     image: "/images/campus/tecoman.jpg",
     link: "/campus/tecoman",
-    founding: "Desde 1992"
+    founding: "Desde 1998"
   },
   {
     name: "Manzanillo",
     image: "/images/campus/manzanillo.jpg",
     link: "/campus/manzanillo",
-    founding: "Desde 2005"
+    founding: "Desde 2002"
   },
   {
     name: "Vallarta",
     image: "/images/campus/vallarta.jpg",
     link: "/campus/vallarta",
-    founding: "Desde 2018"
+    founding: "Desde 2012"
   }
 ];
 
