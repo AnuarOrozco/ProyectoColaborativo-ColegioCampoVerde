@@ -6,8 +6,7 @@ import Nosotros from "./pages/Nosotros";
 import Preescolar from "./pages/niveles/Preescolar";
 import Primaria from "./pages/niveles/Primaria";
 import ScrollToTop from "./components/ScrollToTop";
-// Importaciones comentadas hasta que existan los componentes
-// import Secundaria from "./pages/niveles/Secundaria";
+import Secundaria from "./pages/niveles/Secundaria";
 // import Preparatoria from "./pages/niveles/Preparatoria";
 // import CampusColima from "./pages/campus/Colima";
 
@@ -29,9 +28,9 @@ function App() {
             {/* Niveles Educativos */}
             <Route path="/niveles/preescolar" element={<Preescolar />} />
             <Route path="/niveles/primaria" element={<Primaria />} />
+            <Route path="/niveles/secundaria" element={<Secundaria />} />
             
             {/* Rutas comentadas hasta implementar */}
-            {/* <Route path="/niveles/secundaria" element={<Secundaria />} /> */}
             {/* <Route path="/niveles/preparatoria" element={<Preparatoria />} /> */}
             {/* <Route path="/campus/colima" element={<CampusColima />} /> */}
           </Routes>
