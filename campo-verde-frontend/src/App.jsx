@@ -7,7 +7,7 @@ import Preescolar from "./pages/niveles/Preescolar";
 import Primaria from "./pages/niveles/Primaria";
 import ScrollToTop from "./components/ScrollToTop";
 import Secundaria from "./pages/niveles/Secundaria";
-// import Preparatoria from "./pages/niveles/Preparatoria";
+import Preparatoria from "./pages/niveles/Preparatoria";
 // import CampusColima from "./pages/campus/Colima";
 
 function App() {
@@ -29,9 +29,9 @@ function App() {
             <Route path="/niveles/preescolar" element={<Preescolar />} />
             <Route path="/niveles/primaria" element={<Primaria />} />
             <Route path="/niveles/secundaria" element={<Secundaria />} />
+            <Route path="/niveles/preparatoria" element={<Preparatoria />} />
             
             {/* Rutas comentadas hasta implementar */}
-            {/* <Route path="/niveles/preparatoria" element={<Preparatoria />} /> */}
             {/* <Route path="/campus/colima" element={<CampusColima />} /> */}
           </Routes>
         </main>
